@@ -1,14 +1,9 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/MeetAdalaja/meetadalja-portfolio/blob/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   https://meetadalja-portfolio.vercel.app/
 </h1>
-<p align="center">
-  <a href="https://meetadalja-portfolio.vercel.app/" target="_blank">
-    <img src="meetadalja-portfolio-22nn9hgoe-meet-adalajas-projects.vercel.app" alt="Vercel Status" />
-  </a>
-</p>
 
 ## 🛠 Installation & Set Up
 
