@@ -10,18 +10,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/meet._.adalaja',
     },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://twitter.com/bchiang7',
-    // },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/meet-adalaja/',
     },
-    // {
-    //   name: 'Codepen',
-    //   url: 'https://codepen.io/bchiang7',
-    // },
   ],
 
   navLinks: [
