@@ -18,6 +18,7 @@ const IconLoader = () => (
       />
 
       <text
+        id="M"
         x="50%"
         y="52%"
         dominantBaseline="middle"
