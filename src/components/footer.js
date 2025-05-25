@@ -107,19 +107,6 @@ const Footer = () => {
       <StyledCredit tabindex="-1">
         <a href="https://github.com/MeetAdalaja">
           <div>Designed &amp; Built by Meet Adalaja</div>
-
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
         </a>
       </StyledCredit>
     </StyledFooter>
@@ -129,5 +116,3 @@ const Footer = () => {
 Footer.propTypes = {
   githubInfo: PropTypes.object,
 };
-
-export default Footer;
