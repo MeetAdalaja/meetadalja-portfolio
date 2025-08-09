@@ -1,3 +1,5 @@
+    // use Node.js v16.16.0 (LTS) version
+
 <div align="center">
   <img alt="Logo" src="https://github.com/MeetAdalaja/meetadalja-portfolio/blob/main/src/images/logo.png" width="100" />
 </div>
