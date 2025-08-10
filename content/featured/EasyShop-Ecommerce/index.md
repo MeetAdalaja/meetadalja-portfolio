@@ -3,7 +3,7 @@ date: '1'
 title: 'Advanced E-Commerce WebApp'
 cover: './EasyShop-Ecommerce.png'
 github: 'https://github.com/MeetAdalaja/EasyShop---MERN-Ecommerce'
-external: '#'
+external: 'https://easy-shop-mern-ecommerce-f8eu.vercel.app/'
 tech:
   - TypeScript
   - React

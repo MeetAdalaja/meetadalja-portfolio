@@ -2,7 +2,7 @@
 serial: '13'
 title: 'NewsFromAPI'
 github: 'https://github.com/MeetAdalaja/React-NewsApp'
-external: ''
+external: 'https://react-news-app-liart-one.vercel.app/'
 tech:
   - React.js
   - REST APIs

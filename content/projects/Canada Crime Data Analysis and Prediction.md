@@ -1,8 +1,8 @@
 ---
 serial: '18'
 title: 'Canada Crime Data Analysis and Prediction'
-github: ''
-external: ''
+github: 'https://github.com/MeetAdalaja/Predicting-and-Analyzing-Crime-Trends-in-Canada-1998-2023-.git'
+external: 'https://public.tableau.com/app/profile/meet.adalaja/viz/PredictingandAnalyzingCrimeTrendsinCanada1998-2023/CorrelationbetweenClearedbychargevsClearedotherwiseWithDifferencetoo'
 tech:
   - Python
   - Tableu
