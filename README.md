@@ -1,61 +1,139 @@
-    // use Node.js v16.16.0 (LTS) version
+# Meet Adalaja — Developer Portfolio (Gatsby.js)
 
-<div align="center">
-  <img alt="Logo" src="https://github.com/MeetAdalaja/meetadalja-portfolio/blob/main/src/images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  https://meetadalja-portfolio.vercel.app/
-</h1>
+A fast, polished portfolio site built with **Gatsby.js** to showcase projects, skills, and experience —
+deployed to Vercel.
 
-## 🛠 Installation & Set Up
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fmeetadalja-portfolio.vercel.app)](https://meetadalja-portfolio.vercel.app)
+[![Last commit](https://img.shields.io/github/last-commit/MeetAdalaja/meetadalja-portfolio)](https://github.com/MeetAdalaja/meetadalja-portfolio/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/MeetAdalaja/meetadalja-portfolio)](https://github.com/MeetAdalaja/meetadalja-portfolio)
+![Built with](https://img.shields.io/badge/built%20with-Gatsby-7026B9)
+![Deployed on](https://img.shields.io/badge/deployed%20on-Vercel-000000)
 
-1. Install the Gatsby CLI
+---
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+## ✨ Live Demo
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+**https://meetadalja-portfolio.vercel.app**
 
-   ```sh
-   nvm install
-   ```
+---
 
-3. Install dependencies
+## 📦 Tech Stack
 
-   ```sh
-   yarn
-   ```
+- **Framework:** Gatsby.js (React)
+- **Language:** JavaScript (ESNext)
+- **Styles:** CSS / Gatsby starter styles (customizable)
+- **Build/Deploy:** Vercel
+- **Tooling:** Yarn / npm, ESLint, Prettier
 
-4. Start the development server
+> The repo includes an `.nvmrc` — recommended Node version: **v16.16.0 (LTS)**.
 
-   ```sh
-   npm start
-   ```
+---
 
-## 🚀 Building and Running for Production
+## 🗂️ Repository Structure
 
-1. Generate a full static production build
+```text
+meetadalja-portfolio/
+├─ content/        # Portfolio data (sections, projects, skills, socials, etc.)
+├─ src/            # Components, pages, and UI logic
+├─ static/         # Static assets served as-is
+├─ gatsby-*.js     # Gatsby configuration (config/node/ssr/browser)
+├─ .husky/         # Git hooks (if enabled)
+├─ .eslintrc       # ESLint config
+├─ prettier.config.js
+├─ .nvmrc          # Node version pin (v16.16.0)
+└─ package.json
+```
 
-   ```sh
-   npm run build
-   ```
+> Tip: keep text/images for content under `content/` and `static/` so the site stays configurable.
 
-1. Preview the site as it will appear once deployed
+---
 
-   ```sh
-   npm run serve
-   ```
+## ⚙️ Local Development
 
-## 🎨 Color Reference
+### 1) Clone & install
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+```bash
+git clone https://github.com/MeetAdalaja/meetadalja-portfolio.git
+cd meetadalja-portfolio
+# optional but recommended (uses .nvmrc):
+nvm install && nvm use
+# install deps (choose one)
+yarn         # or: npm install
+```
+
+### 2) Run the dev server
+
+```bash
+npm start    # or: yarn start
+# default: http://localhost:8000
+```
+
+### 3) Production build & preview
+
+```bash
+npm run build    # generates /public
+npm run serve    # serves the production build
+```
+
+---
+
+## 🧩 Customizing Content
+
+You can update most of the portfolio without touching components:
+
+- **Profile & socials:** Edit entries in `content/` (e.g., name, title, links).
+- **Skills:** Add or reorder skills in `content/` (grouped or as a flat list).
+- **Projects:** Add each project with title, tech stack, description, repo/demo links, and images.
+- **Experience / Education:** Add timeline entries with role, org, dates, and highlights.
+
+> After editing `content/`, restart the dev server to ensure changes are reflected.
+
+---
+
+## 🧪 Quality & Formatting
+
+- **Lint:** `npm run lint` (if script present)
+- **Format:** `npm run format` (if script present)
+
+> ESLint and Prettier configs are included; wire scripts as desired in `package.json`.
+
+---
+
+## ☁️ Deploy to Vercel
+
+A Vercel project is already connected. For a fresh deployment:
+
+1. **New Project → Import GitHub repo**
+2. **Framework Preset:** Gatsby
+3. **Build Command:** `npm run build` (or `gatsby build`)
+4. **Output Directory:** `public`
+5. **Node Version:** respect `.nvmrc` (16.16.0) or set in Vercel’s Project → Settings → Node.js
+6. Deploy — your site will be on **https://meetadalja-portfolio.vercel.app**
+
+> For custom domains, add them under **Vercel → Project → Domains** and redeploy.
+
+---
+
+---
+
+## 🧭 Roadmap (Nice-to-have)
+
+- [ ] Add a **Projects** filter by tech/tag
+- [ ] Light/Dark **theme toggle**
+- [ ] **Blog** section with Markdown posts
+- [ ] Add **analytics** (e.g., Plausible or Google Analytics via plugin)
+- [ ] Lighthouse pass (preload fonts, optimize images, lazy-load heavier assets)
+
+---
+
+## 📄 License
+
+If you intend to open-source this portfolio, add a license file (e.g., MIT).
+Otherwise, you can leave it unlicensed for personal use.
+
+---
+
+## 🙏 Acknowledgements
+
+- Gatsby.js community & plugin authors
+- Open-source tool maintainers that power the web
