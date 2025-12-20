@@ -12,6 +12,7 @@ const StyledAboutSection = styled.section`
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
+    text-align: justify;
 
     @media (max-width: 768px) {
       display: block;
@@ -27,6 +28,7 @@ const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+    text-align: initial;
 
     li {
       position: relative;

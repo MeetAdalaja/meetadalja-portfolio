@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Advanced E-Commerce WebApp'
 cover: './EasyShop-Ecommerce.png'
 github: 'https://github.com/MeetAdalaja/EasyShop---MERN-Ecommerce'

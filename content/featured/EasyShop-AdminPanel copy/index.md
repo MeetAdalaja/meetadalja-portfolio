@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '4'
 title: 'ECommerce-Admin-Dashboard'
 cover: './EasyShop-AdminPanel.png'
 github: 'https://github.com/MeetAdalaja/Vite-ECommerce-Admin-Dashboard'
