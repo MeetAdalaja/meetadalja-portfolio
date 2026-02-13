@@ -151,25 +151,23 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Meet Adalaja, and I’m passionate about building web experiences that
-              are not only functional but also thoughtful and user-centric. My journey into web
-              development began with curiosity-driven JavaScript experiments, and over time, it grew
-              into a full-fledged career focused on solving real-world problems through scalable web
-              applications.
+              are functional, thoughtful, and user-centric. I enjoy taking ideas from concept to
+              production by building clean UI, predictable APIs, and reliable releases.
             </p>
 
             <p>
-              Fast-forward to today — I’ve had the opportunity to work at fast-paced startups and
-              tech firms like <b>Purezza Technologies</b> and <b>TechAnek</b>, where I’ve built
-              everything from multi-vendor e-commerce platforms to secure desktop apps with facial
-              recognition. I'm currently pursuing my Master of Computer Science at Algoma
-              University, where I also mentor peers and contribute to academic research in AI and
-              crime prediction.
+              Recently, I’ve worked at fast-paced teams like <b>Purezza Technologies</b> and{' '}
+              <b>TechAnek</b>, building responsive React applications, integrating REST APIs with
+              Node.js (Express), and working across MongoDB and SQL (PostgreSQL/MySQL). I’ve also
+              contributed through PR reviews, Jest testing, Agile delivery, and mentoring within
+              teams.
             </p>
 
             <p>
-              My current focus is developing responsive, accessible, and full-stack applications
-              using the MERN stack, while also mentoring new developers and exploring intersections
-              between AI, &amp; web technology.
+              I completed my M.Sc. in Computer Science at Algoma University and built projects like
+              a multi-tenant RBAC task board (Angular + NestJS) and an e-commerce web app with an
+              admin dashboard (React + Express). My current focus is building accessible, responsive
+              full-stack apps with React/Angular, TypeScript, and Node.js.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
