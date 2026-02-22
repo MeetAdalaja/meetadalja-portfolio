@@ -7,8 +7,8 @@ module.exports = {
       url: 'https://github.com/MeetAdalaja',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/meet._.adalaja',
+      name: 'Reslink',
+      url: 'https://reslink.io/reslink/meet-adalaja-software-developer',
     },
     {
       name: 'Linkedin',

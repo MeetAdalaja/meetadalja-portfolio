@@ -47,6 +47,38 @@ const StyledText = styled.div`
       }
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    a.inline-link::after {
+      transition: none;
+    }
+  }
+
+  a.inline-link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a.inline-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px; /* adjust as you like */
+    width: 100%;
+    height: 2px;
+
+    background: currentColor; /* IMPORTANT: makes the line visible */
+    transform: scaleX(0); /* start hidden */
+    transform-origin: left; /* grow from left -> right */
+    transition: transform 0.25s ease;
+  }
+
+  a.inline-link:hover::after,
+  a.inline-link:focus-visible::after {
+    transform: scaleX(1); /* expands to full width */
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
@@ -128,18 +160,20 @@ const About = () => {
   }, []);
 
   const skills = [
-    'JavaScript (ES6+)',
     'TypeScript',
-    'React.js & Redux Toolkit',
-    'Node.js & Express.js',
+    'React.js/Angular/Next.js',
+    'Redux Toolkit & RTK Query',
+    'Node.js (Express.js/NestJS)',
     'MongoDB & Firebase',
     'Tailwind CSS & Material UI',
-    'HTML5 & CSS3',
-    'REST APIs & RTK Query',
-    'Electron.js & OpenCV',
-    'Firebase Auth & Stripe Integration',
-    'Git & GitHub',
-    'Jupyter Notebook & Tableau',
+    'REST/GraphQL APIs',
+    'JWT Auth & RBAC',
+    'PostgreSQL/MySQL (SQL)',
+    'MongoDB & Redis',
+    'TypeORM & Migrations',
+    'Jest & Supertest',
+    'Docker & CI/CD (Jenkins, GitHub Actions)',
+    'AWS/Azure',
   ];
 
   return (
@@ -152,22 +186,34 @@ const About = () => {
             <p>
               Hello! My name is Meet Adalaja, and I’m passionate about building web experiences that
               are functional, thoughtful, and user-centric. I enjoy taking ideas from concept to
-              production by building clean UI, predictable APIs, and reliable releases.
+              production by building clean UI, predictable APIs, and reliable releases that scale.
             </p>
 
             <p>
-              Recently, I’ve worked at fast-paced teams like <b>Purezza Technologies</b> and{' '}
-              <b>TechAnek</b>, building responsive React applications, integrating REST APIs with
-              Node.js (Express), and working across MongoDB and SQL (PostgreSQL/MySQL). I’ve also
-              contributed through PR reviews, Jest testing, Agile delivery, and mentoring within
-              teams.
+              Professionally, I’ve worked with fast-paced teams like <b>Purezza Technologies</b> and{' '}
+              <b>TechAnek</b>, building responsive <b>React/Angular/Next.js</b> apps and integrating{' '}
+              <b>Node.js</b> <b>REST/GraphQL APIs</b> across <b>MongoDB</b> and{' '}
+              <b>PostgreSQL/MySQL</b>. Along the way, I owned PR quality, testing with{' '}
+              <b>Jest/Supertest</b>, and CI/CD practices, plus mentoring and Agile delivery to ship
+              changes with confidence.
             </p>
 
             <p>
               I completed my M.Sc. in Computer Science at Algoma University and built projects like
-              a multi-tenant RBAC task board (Angular + NestJS) and an e-commerce web app with an
-              admin dashboard (React + Express). My current focus is building accessible, responsive
-              full-stack apps with React/Angular, TypeScript, and Node.js.
+              a{' '}
+              <b>
+                <a
+                  className="inline-link"
+                  href="https://turbovets-task-management.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Multi-Tenant RBAC Task Board
+                </a>
+              </b>{' '}
+              (Angular + NestJS) with secured APIs and seeded org/user data, plus <b>MailGenieAI</b>
+              , a Gmail add-on that speeds up drafting with AI. My current focus is building
+              accessible, responsive full-stack apps with <b>React/Angular</b>, <b>TypeScript</b>,
+              and <b>Node.js</b>.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

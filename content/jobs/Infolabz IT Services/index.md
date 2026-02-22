@@ -1,12 +1,10 @@
 ---
 date: '2023-08-31'
-title: 'Fundamentals of JS and React Intern'
+title: 'React Developer Intern'
 company: 'InfoLabz IT Services'
-location: 'Ahmedabad, Gu-IN'
-range: 'July 2023 - August 2023'
+location: 'India'
+range: 'May 2022 - August 2022'
 url: 'https://infolabz.in/'
 ---
 
-- Underwent structured training in JavaScript ES6+ features and React development.
-- Developed mini-projects to solidify concepts in props handling, hooks usage, and component-based UI architecture.
-- Participated in group coding sessions, simulated client requirements, and presented solutions with code walkthroughs.
+- Implemented responsive, accessible React UI in JavaScript (ES6+) and HTML5/CSS3 with reusable patterns; upgraded mobile usability, reduced UI defects 26%, and introduced stable loading/empty/error states for data-driven pages.

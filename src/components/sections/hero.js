@@ -65,10 +65,11 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a MERN Stack Developer and Computer Science graduate student at Algoma University, with
-        a passion for building scalable web applications and mentoring others. From leading
-        e-commerce projects to exploring AI and data-driven solutions, I bring a blend of technical
-        expertise and a commitment to impactful development.
+        I’m a Full-Stack Developer and Team Lead and an MSc Computer Science graduate student at
+        Algoma University, passionate about building secure and scalable web applications. From
+        improving checkout and tracking experiences for 200+ daily users to optimizing performance
+        (p95 2.2s to 1.2s) and strengthening JWT/RBAC APIs, I bring a blend of technical depth and a
+        focus on measurable impact.
       </p>
     </>
   );
