@@ -204,7 +204,7 @@ const About = () => {
               <b>
                 <a
                   className="inline-link"
-                  href="https://turbovets-task-management.onrender.com/"
+                  href="https://multi-tenant-rbac-task-management-b.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer">
                   Multi-Tenant RBAC Task Board

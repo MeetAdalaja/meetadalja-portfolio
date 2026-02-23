@@ -3,7 +3,7 @@ date: '1'
 title: 'Multi-Tenant RBAC Task Management Tool'
 cover: './Turbovets-Task_Management.png'
 github: 'https://github.com/MeetAdalaja/TurboVets---Task-Management'
-external: 'https://turbovets-task-management.onrender.com/'
+external: 'https://multi-tenant-rbac-task-management-b.vercel.app/'
 tech:
   - Angular
   - NestJS
