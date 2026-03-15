@@ -166,6 +166,8 @@ const About = () => {
     'Node.js (Express.js/NestJS)',
     'MongoDB & Firebase',
     'Tailwind CSS & Material UI',
+    'Java/Spring Boot',
+    'C#/.NET',
     'REST/GraphQL APIs',
     'JWT Auth & RBAC',
     'PostgreSQL/MySQL (SQL)',
