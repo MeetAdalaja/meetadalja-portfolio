@@ -28,7 +28,7 @@ const StyledProjectsSection = styled.section`
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 16px;
     position: relative;
     margin-top: 50px;
 
@@ -70,8 +70,10 @@ const StyledProject = styled.li`
     position: relative;
     height: 100%;
     padding: 2rem 1.75rem;
+    border: 1px solid rgba(244, 247, 243, 0.1);
     border-radius: var(--border-radius);
-    background-color: var(--light-navy);
+    background: linear-gradient(155deg, rgba(246, 189, 96, 0.08), rgba(19, 32, 29, 0.9) 32%),
+      var(--light-navy);
     transition: var(--transition);
     overflow: auto;
   }
@@ -81,7 +83,7 @@ const StyledProject = styled.li`
     margin-bottom: 35px;
 
     .folder {
-      color: var(--green);
+      color: var(--amber);
       svg {
         width: 40px;
         height: 40px;
@@ -138,7 +140,8 @@ const StyledProject = styled.li`
   .project-description {
     color: var(--light-slate);
     font-size: 17px;
-    text-align: justify;
+    text-align: left;
+    line-height: 1.45;
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};

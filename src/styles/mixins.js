@@ -152,10 +152,10 @@ const mixins = {
       padding-left: 30px;
       margin-bottom: 10px;
       &:before {
-        content: '▹';
+        content: '>';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--amber);
       }
     }
   `,

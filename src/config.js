@@ -7,8 +7,8 @@ module.exports = {
       url: 'https://github.com/MeetAdalaja',
     },
     {
-      name: 'Reslink',
-      url: 'https://reslink.io/reslink/meet-adalaja-software-developer',
+      name: 'LeetCode',
+      url: 'https://leetcode.com/u/MeetAdalaja/',
     },
     {
       name: 'Linkedin',
@@ -17,6 +17,10 @@ module.exports = {
   ],
 
   navLinks: [
+    {
+      name: 'Impact',
+      url: '/#impact',
+    },
     {
       name: 'About',
       url: '/#about',

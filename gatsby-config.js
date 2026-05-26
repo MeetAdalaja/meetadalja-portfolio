@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Meet Adalaja',
     description:
-      'Meet Adalaja is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://meetadalaja.com', // No trailing slash allowed!
+      'Meet Adalaja is a full-stack developer and team lead building secure, fast, measurable product experiences with React, Angular, TypeScript, Node.js, NestJS, SQL, MongoDB, and CI/CD.',
+    siteUrl: 'https://meetadalja-portfolio.vercel.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
@@ -28,7 +28,6 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

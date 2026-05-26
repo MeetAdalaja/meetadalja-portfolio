@@ -55,17 +55,17 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
-    <StyledCredit tabindex="-1">
+    <StyledCredit tabIndex="-1">
       <a href="https://github.com/MeetAdalaja">
         <div>Designed &amp; Built by Meet Adalaja</div>
       </a>

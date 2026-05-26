@@ -21,8 +21,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: var(--lightest-navy);
-    color: var(--lightest-slate);
+    background-color: var(--amber);
+    color: var(--dark-navy);
   }
 
   /* Provide basic, default focus styles.*/
@@ -75,6 +75,12 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--navy);
+    background-image:
+      linear-gradient(rgba(53, 240, 189, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(103, 183, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(135deg, rgba(246, 189, 96, 0.06), rgba(11, 18, 17, 0) 38%);
+    background-size: 38px 38px, 38px 38px, 100% 100%;
+    background-attachment: fixed;
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -82,6 +88,10 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 480px) {
       font-size: var(--fz-lg);
+    }
+
+    @media (max-width: 768px) {
+      background-attachment: scroll;
     }
 
     &.hidden {
@@ -114,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin: 0 auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1680px;
     min-height: 100vh;
     padding: 200px 150px;
 
@@ -170,14 +180,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   b{
-    font-weight: normal;
-    color: var(--green);
+    font-weight: 600;
+    color: var(--cream);
   }
 
 
   .big-heading {
     margin: 0;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(44px, 9vw, 92px);
+    letter-spacing: 0;
   }
 
   .medium-heading {
@@ -200,7 +211,7 @@ const GlobalStyle = createGlobalStyle`
       counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
-      color: var(--green);
+      color: var(--amber);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -219,7 +230,7 @@ const GlobalStyle = createGlobalStyle`
       width: 300px;
       height: 1px;
       margin-left: 20px;
-      background-color: var(--lightest-navy);
+      background: linear-gradient(90deg, var(--lightest-navy), rgba(53, 240, 189, 0.2));
 
       @media (max-width: 1080px) {
         width: 200px;
@@ -328,10 +339,10 @@ const GlobalStyle = createGlobalStyle`
         padding-left: 30px;
         margin-bottom: 10px;
         &:before {
-          content: '▹';
+          content: '>';
           position: absolute;
           left: 0;
-          color: var(--green);
+          color: var(--amber);
         }
       }
     }

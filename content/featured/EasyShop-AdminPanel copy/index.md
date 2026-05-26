@@ -1,14 +1,15 @@
 ---
 date: '4'
-title: 'ECommerce-Admin-Dashboard'
+title: 'E-Commerce Admin Dashboard'
 cover: './EasyShop-AdminPanel.png'
 github: 'https://github.com/MeetAdalaja/Vite-ECommerce-Admin-Dashboard'
 external: 'https://vite-e-commerce-admin-dashboard.vercel.app/'
 tech:
   - React/Vite
-  - SASS
+  - Sass
   - Material UI
   - REST APIs
+  - Charts
 ---
 
-Developed a dynamic web app with Vite-React, featuring revenue tracking, monthly gain/loss analysis, user & product management, stock & order handling, customer management, coupon discounts, and responsive design. Includes data analysis via bar, pie, and line charts.
+Created an admin dashboard for revenue tracking, monthly gain/loss analysis, customer and product management, coupon discounts, stock/order workflows, and responsive data visualizations across bar, pie, and line charts.

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+
+# meetadalaja-updatedPortfolio
+
+=======
+
 # Meet Adalaja — Developer Portfolio (Gatsby.js)
 
 A fast, polished portfolio site built with **Gatsby.js** to showcase projects, skills, and experience —
@@ -137,3 +143,4 @@ Otherwise, you can leave it unlicensed for personal use.
 
 - Gatsby.js community & plugin authors
 - Open-source tool maintainers that power the web
+  > > > > > > > 5ab7f4a (Initial commit)

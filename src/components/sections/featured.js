@@ -127,6 +127,10 @@ const StyledProject = styled.li`
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
 
+    a {
+      z-index: 2;
+    }
+
     @media (min-width: 768px) {
       margin: 0 0 20px;
     }
@@ -156,11 +160,14 @@ const StyledProject = styled.li`
     position: relative;
     z-index: 2;
     padding: 25px;
+    border: 1px solid rgba(244, 247, 243, 0.1);
     border-radius: var(--border-radius);
-    background-color: var(--light-navy);
+    background: linear-gradient(145deg, rgba(103, 183, 255, 0.08), rgba(19, 32, 29, 0.92)),
+      var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
-    text-align: justify;
+    text-align: left;
+    line-height: 1.45;
 
     @media (max-width: 768px) {
       padding: 20px 0;
@@ -284,15 +291,15 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
-        mix-blend-mode: screen;
+        background: linear-gradient(135deg, rgba(53, 240, 189, 0.22), rgba(255, 122, 162, 0.1));
+        mix-blend-mode: color;
       }
     }
 
     .img {
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      filter: saturate(0.7) contrast(1.04) brightness(86%);
 
       @media (max-width: 768px) {
         object-fit: cover;

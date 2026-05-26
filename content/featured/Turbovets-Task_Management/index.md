@@ -12,4 +12,4 @@ tech:
   - REST
 ---
 
-Built a secure, scalable multi-organization app with predictable enterprise permissions for 3+ seeded orgs and 10+ demo users (multi-org membership). Modeled Users / Organizations / Memberships / Tasks, implemented JWT authorization with service checks, and added role-aware UI guards—enforcing 5-level permissions across 20+ endpoints and cutting demo/setup time 60–70%.
+Built a secure multi-tenant task board with 5-level RBAC across Owner, Admin, Manager, Member, and Viewer roles. Modeled users, organizations, memberships, and tasks; enforced JWT authorization across 20+ APIs; seeded 3+ orgs and 10+ demo users to cut setup time by 60-70%.

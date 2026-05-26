@@ -2,20 +2,23 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #233554;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
-    --dark-slate: #495670;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
-    --white: #e6f1ff;
-    --green: #64ffda;
-    --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
-    --blue: #57cbff;
+    --dark-navy: #07110f;
+    --navy: #0b1211f7;
+    --light-navy: #13201d;
+    --lightest-navy: #25443b;
+    --navy-shadow: rgba(0, 0, 0, 0.46);
+    --dark-slate: #5c6a65;
+    --slate: #91a09b;
+    --light-slate: #bfcbc6;
+    --lightest-slate: #f4f7f3;
+    --white: #fffaf0;
+    --green: #35f0bd;
+    --green-tint: rgba(53, 240, 189, 0.1);
+    --pink: #ff7aa2;
+    --blue: #67b7ff;
+    --amber: #f6bd60;
+    --coral: #ff8066;
+    --cream: #fff3d7;
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
@@ -30,8 +33,8 @@ const variables = css`
     --fz-xxl: 22px;
     --fz-heading: 32px;
 
-    --border-radius: 4px;
-    --nav-height: 100px;
+    --border-radius: 8px;
+    --nav-height: 80px;
     --nav-scroll-height: 70px;
 
     --tab-height: 42px;

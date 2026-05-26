@@ -3,7 +3,7 @@ date: '2024-04-30'
 title: 'Full Stack Developer'
 company: 'TechAnek Technologies'
 location: 'India'
-range: 'September 2023 - April 2024'
+range: 'January 2023 - March 2024'
 url: 'https://techanek.com/'
 ---
 

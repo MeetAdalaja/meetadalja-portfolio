@@ -5,18 +5,18 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
-  max-width: 600px;
-  margin: 0 auto 100px;
+  max-width: 820px;
+  margin: 0 auto 90px;
   text-align: center;
 
   @media (max-width: 768px) {
-    margin: 0 auto 50px;
+    margin-bottom: 50px;
   }
 
   .overline {
     display: block;
-    margin-bottom: 20px;
-    color: var(--green);
+    margin-bottom: 18px;
+    color: var(--amber);
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
@@ -32,12 +32,43 @@ const StyledContactSection = styled.section`
   }
 
   .title {
-    font-size: clamp(40px, 5vw, 60px);
+    font-size: clamp(42px, 7vw, 72px);
   }
 
-  .email-link {
+  p {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: var(--light-slate);
+    font-size: clamp(var(--fz-lg), 2vw, var(--fz-xl));
+    line-height: 1.45;
+  }
+
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 38px;
+  }
+
+  .contact-link {
     ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+
+    &.primary {
+      color: var(--dark-navy);
+      background: var(--green);
+      border-color: var(--green);
+      font-weight: 700;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--dark-navy);
+      }
+    }
   }
 `;
 
@@ -55,19 +86,27 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+      <h2 className="numbered-heading overline">What is next?</h2>
 
-      <h2 className="title">Get In Touch</h2>
+      <h2 className="title">Let's build something useful.</h2>
 
       <p>
-        I'm actively looking for new opportunities and would love to hear from you! Whether you're
-        Hiring, have a Collaboration in mind, or just want to Connect, feel free to reach out via
-        email. I’ll get back to you as soon as I can.
+        I am open to full-stack, frontend, backend, and product engineering roles where the work
+        needs a mix of craft, security awareness, performance thinking, and calm ownership.
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+      <div className="contact-actions">
+        <a className="contact-link primary" href={`mailto:${email}`}>
+          Email Me
+        </a>
+        <a
+          className="contact-link"
+          href="https://www.linkedin.com/in/meet-adalaja/"
+          target="_blank"
+          rel="noreferrer">
+          LinkedIn
+        </a>
+      </div>
     </StyledContactSection>
   );
 };

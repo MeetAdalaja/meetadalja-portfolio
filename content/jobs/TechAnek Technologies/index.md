@@ -3,7 +3,7 @@ date: '2023-09-30'
 title: 'MERN/MEAN Developer Intern'
 company: 'TechAnek Technologies'
 location: 'India'
-range: 'August 2022 - September 2023'
+range: 'August 2022 - December 2022'
 url: 'https://techanek.com/'
 ---
 

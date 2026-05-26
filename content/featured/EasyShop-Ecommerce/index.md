@@ -1,6 +1,6 @@
 ---
 date: '2'
-title: 'Advanced E-Commerce WebApp'
+title: 'Advanced E-Commerce Web App'
 cover: './EasyShop-Ecommerce.png'
 github: 'https://github.com/MeetAdalaja/EasyShop---MERN-Ecommerce'
 external: 'https://easy-shop-mern-ecommerce-f8eu.vercel.app/'
@@ -9,9 +9,9 @@ tech:
   - React
   - Node + Express
   - Firebase
-  - Redux.js
-  - Stripe (Software)
+  - Redux
+  - Stripe
   - REST APIs
 ---
 
-Built a responsive e-commerce app with Firebase auth and Stripe payments. Enabled advanced product search/filtering, real-time discounts, and admin tools for managing products, users, and orders. Integrated dashboard with monthly analytics via interactive charts.
+Designed and built a responsive MERN e-commerce experience with Firebase auth, Stripe payments, advanced search/filtering, real-time discounts, and admin workflows for products, users, orders, and dashboard analytics.

@@ -8,18 +8,20 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledJobsSection = styled.section`
-  max-width: 800px;
+  max-width: 1080px;
 
   .inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 760px) {
       display: block;
     }
 
     // Prevent container from jumping
-    @media (min-width: 700px) {
-      min-height: 340px;
+    @media (min-width: 760px) {
+      min-height: 420px;
     }
   }
 `;
@@ -27,18 +29,18 @@ const StyledJobsSection = styled.section`
 const StyledTabList = styled.div`
   position: relative;
   z-index: 3;
-  width: max-content;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
 
-  @media (max-width: 600px) {
+  @media (max-width: 760px) {
     display: flex;
     overflow-x: auto;
     width: calc(100% + 100px);
     padding-left: 50px;
     margin-left: -50px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
   @media (max-width: 480px) {
     width: calc(100% + 50px);
@@ -71,11 +73,17 @@ const StyledTabButton = styled.button`
   display: flex;
   align-items: center;
   width: 100%;
-  height: var(--tab-height);
-  padding: 0 20px 2px;
-  border-left: 2px solid var(--lightest-navy);
-  background-color: transparent;
-  color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
+  min-height: 56px;
+  padding: 0 18px;
+  margin-bottom: 8px;
+  border: 1px solid
+    ${({ isActive }) => (isActive ? 'rgba(53, 240, 189, 0.45)' : 'rgba(244, 247, 243, 0.08)')};
+  border-left: 3px solid
+    ${({ isActive }) => (isActive ? 'var(--green)' : 'rgba(244, 247, 243, 0.08)')};
+  border-radius: var(--border-radius);
+  background-color: ${({ isActive }) =>
+    isActive ? 'rgba(53, 240, 189, 0.1)' : 'rgba(19, 32, 29, 0.52)'};
+  color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--light-slate)')};
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
@@ -84,62 +92,44 @@ const StyledTabButton = styled.button`
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 760px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: 170px;
     padding: 0 15px;
-    border-left: 0;
-    border-bottom: 2px solid var(--lightest-navy);
+    border-left: 1px solid
+      ${({ isActive }) => (isActive ? 'rgba(53, 240, 189, 0.45)' : 'rgba(244, 247, 243, 0.08)')};
+    border-bottom: 3px solid
+      ${({ isActive }) => (isActive ? 'var(--green)' : 'rgba(244, 247, 243, 0.08)')};
     text-align: center;
   }
 
   &:hover,
   &:focus {
-    background-color: var(--light-navy);
+    background-color: rgba(53, 240, 189, 0.08);
   }
 `;
 
 const StyledHighlight = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 2px;
-  height: var(--tab-height);
-  border-radius: var(--border-radius);
-  background: var(--green);
-  transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-delay: 0.1s;
-
-  @media (max-width: 600px) {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
-  }
-  @media (max-width: 480px) {
-    margin-left: 25px;
-  }
+  display: none;
 `;
 
 const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
-  margin-left: 20px;
-
-  @media (max-width: 600px) {
-    margin-left: 0;
-  }
 `;
 
 const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px 5px;
+  padding: 28px;
+  border: 1px solid rgba(244, 247, 243, 0.1);
+  border-radius: var(--border-radius);
+  background: linear-gradient(150deg, rgba(246, 189, 96, 0.08), rgba(19, 32, 29, 0.82) 34%),
+    var(--light-navy);
+
+  @media (max-width: 480px) {
+    padding: 22px;
+  }
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};
@@ -156,11 +146,23 @@ const StyledTabPanel = styled.div`
     }
   }
 
-  .range {
+  .job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 25px;
+  }
+
+  .range,
+  .location {
+    margin: 0;
+    padding: 7px 10px;
+    border: 1px solid rgba(244, 247, 243, 0.08);
+    border-radius: 999px;
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
+    line-height: 1;
   }
 `;
 
@@ -266,14 +268,14 @@ const Jobs = () => {
                 </StyledTabButton>
               );
             })}
-          <StyledHighlight activeTabId={activeTabId} />
+          <StyledHighlight />
         </StyledTabList>
 
         <StyledTabPanels>
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, range, location } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -294,7 +296,10 @@ const Jobs = () => {
                       </span>
                     </h3>
 
-                    <p className="range">{range}</p>
+                    <div className="job-meta">
+                      <p className="range">{range}</p>
+                      {location && <p className="location">{location}</p>}
+                    </div>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>
