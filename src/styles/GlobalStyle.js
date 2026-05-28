@@ -154,18 +154,22 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    margin: 0 auto;
-    padding: 100px 0;
-    max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1000px;
 
-    @media (max-width: 768px) {
-      padding: 80px 0;
-    }
-
-    @media (max-width: 480px) {
-      padding: 60px 0;
-    }
+  @media (max-width: 1100px) and (orientation: portrait) {
+    padding: 56px 0;
   }
+
+  @media (max-width: 768px) {
+    padding: 56px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 48px 0;
+  }
+}
 
   h1,
   h2,

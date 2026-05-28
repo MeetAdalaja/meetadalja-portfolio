@@ -8,6 +8,11 @@ const StyledImpactSection = styled.section`
   max-width: 1120px;
   padding-top: 30px;
 
+  @media (max-width: 1100px) and (orientation: portrait) {
+    padding-top: 16px;
+    padding-bottom: 48px;
+  }
+
   .section-heading {
     margin-bottom: 34px;
   }

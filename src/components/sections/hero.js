@@ -14,6 +14,11 @@ const StyledHeroSection = styled.section`
     padding-top: var(--nav-height);
   }
 
+  @media (max-width: 1100px) and (orientation: portrait) {
+    min-height: auto;
+    padding: 96px 0 48px;
+  }
+
   .hero-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.72fr);
